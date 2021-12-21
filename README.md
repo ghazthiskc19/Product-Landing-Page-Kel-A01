@@ -1,6 +1,6 @@
 # Product Landing Page
 
-![preview_image](assets/image/preview.jpeg)
+![preview_image](assets/image/preview.JPG)
 Preview Website
 
 
