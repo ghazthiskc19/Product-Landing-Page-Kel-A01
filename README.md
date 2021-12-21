@@ -1,6 +1,6 @@
 # Product Landing Page
 
-![preview_image](assets/image/preview.jpg)
+![preview_image](assets/image/preview.jpeg)
 Preview Website
 
 
@@ -26,7 +26,7 @@ Santri dari Pondok Pesantren Darul Arqam Muhammadiyah Daerah Garut dan duduk di 
 "Carilah ketenangan bukan kebahagiaan karena orang yang bahagia belum tentu merasakan ketenangan"
 
 ### Social Media :
-[![instagram](https://img.shields.io/badge/-INSTAGRAM-blue?style=for-the-badge&logo=instagram&logoColor=white) Instagram](https://instagram.com/ghazthiskc/)
+[![instagram](https://img.shields.io/badge/-INSTAGRAM-blue?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ghazthiskc/)
 [![github](https://img.shields.io/badge/-GITHUB-lightgrey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ghazthiskc19/)
 
 ## 3.   A Ernest
