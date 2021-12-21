@@ -4,7 +4,7 @@
 Preview Website
 
 
-Ini merupakan project kecil yang kami buat dengan tim yang beranggotakan 3 orang. Project ini juga sebagai latihan serta untuk memberikan Tugas Kelompok pada Bootcamp Progate yang ke 2
+Ini merupakan project kecil yang kami buat dengan tim yang beranggotakan 3 orang. Project ini bertemakan Produt Landing Page tentang Food atau makanan yang dimana di dalam website ini terdapat produk berupa makanan dan Project ini juga sebagai latihan serta untuk memberikan Tugas Kelompok pada Bootcamp Progate yang ke 2
 
 # Adapun orang orang yang berkontribusi dalam Project ini
 
