@@ -4,17 +4,18 @@ Ini merupakan project kecil yang kami buat dengan tim yang beranggotakan 3 orang
 
 # Adapun orang orang yang berkontribusi dalam Project ini
 
-## Ahmad Hidayat
+## 1.  Ahmad Hidayat
 
 ### Quotes :
 "The journey of a thousand miles must begin with a single step."
 
 ### Social Media :
 [Instagram](https://www.instagram.com/hidayat_a_/)
+
 [ Github](https://github.com/yat2yat)
 
 
-## Muhammad Ghazy Humaidi
+## 2. Muhammad Ghazy Humaidi
 
 Santri dari Pondok Pesantren Darul Arqam Muhammadiyah Daerah Garut dan duduk di kelas 10 / 1 SMA
 
@@ -23,6 +24,7 @@ Santri dari Pondok Pesantren Darul Arqam Muhammadiyah Daerah Garut dan duduk di 
 
 ### Social Media :
 [Instagram](https://instagram.com/ghazthiskc/)
+
 [ Github](https://github.com/ghazthiskc19/)
 
-## A Ernest
+## 3.   A Ernest
