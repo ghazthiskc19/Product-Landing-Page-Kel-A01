@@ -14,8 +14,8 @@ Ini merupakan project kecil yang kami buat dengan tim yang beranggotakan 3 orang
 "The journey of a thousand miles must begin with a single step."
 
 ### Social Media :
-[![instagram](https://img.shields.io/badge/-INSTAGRAM-blue?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/hidayat_a_/)
-[![github](https://img.shields.io/badge/-GITHUB-lightgrey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yat2yat)
+[![instagram](https://img.shields.io/badge/-INSTAGRAM-cd486b?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/hidayat_a_/)
+[![github](https://img.shields.io/badge/-GITHUB-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yat2yat)
 
 
 ## 2.  Muhammad Ghazy Humaidi
@@ -26,7 +26,7 @@ Santri dari Pondok Pesantren Darul Arqam Muhammadiyah Daerah Garut dan duduk di 
 "Carilah ketenangan bukan kebahagiaan karena orang yang bahagia belum tentu merasakan ketenangan"
 
 ### Social Media :
-[![instagram](https://img.shields.io/badge/-INSTAGRAM-blue?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ghazthiskc/)
-[![github](https://img.shields.io/badge/-GITHUB-lightgrey?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ghazthiskc19/)
+[![instagram](https://img.shields.io/badge/-INSTAGRAM-cd486b?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ghazthiskc/)
+[![github](https://img.shields.io/badge/-GITHUB-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ghazthiskc19/)
 
 ## 3.   A Ernest
