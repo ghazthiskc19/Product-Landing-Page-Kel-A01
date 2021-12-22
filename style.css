@@ -21,6 +21,45 @@
     --layer-6: 3;
     scroll-behavior: smooth;
 }
+/* Animation */
+@keyframes animateP1 {
+    0%{
+        transform: translate(0);
+        margin: 25px 20px 15px 2px;
+    }
+    100%{
+        transform: translate(-40px, -50px);
+        margin: 25px 0;
+        
+    }
+}
+@keyframes animateP2 {
+    0%{
+        transform: translate(0);
+        margin: 25px 0;
+    }
+    100%{
+        transform: translate(40px, 50px);
+        margin: 25px 0;
+        
+    }
+}
+@keyframes animateOpacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes opacityTransform{
+    0%{ opacity: 0; transform: translateY(20px); }
+    100%{ opacity: 1; transform: translateY(0); }
+}
+@keyframes opacityTransformInput{
+    0%{ opacity: 0; top: 20px; }
+    100%{ opacity: 1; top: 0px; }
+}
 img, .logo{
     user-select: none;
     pointer-events: none;
@@ -60,6 +99,8 @@ header::before {
     left: 0;
     bottom: 0;
     background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(4,4,4,0.75) 43%, rgba(3,3,3,0.5) 71%, rgba(45,45,45,0) 94%);
+    animation: animateOpacity .6s forwards .6s ease;
+    opacity: 0;
 }
 header{
     width: 100%;
@@ -101,6 +142,27 @@ nav{
 .nav-links a, .logo p{
     color: white;
 }
+a.nav-link {
+    position: relative;
+}
+a.nav-link::after {
+    display: block;
+    content: "";
+    height: 5px;
+    background: rgb(0 118 195);
+    position: absolute;
+    bottom: -10px;
+    left: -7.5px;
+    right: -7.5px;
+    transition: transform .3s;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    
+}
+a.nav-link:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
 .logo{
     width: 250px;
     display: grid;
@@ -123,7 +185,8 @@ nav{
     font-weight: 500;
     color: wheat;
     padding: 0px 20px 10px 20px;
-
+    opacity: 0;
+    animation: opacityTransform .6s forwards ease;
 }
 .header-left-wrapper p {
     text-align: justify;
@@ -131,6 +194,13 @@ nav{
     padding: 10px 20px;
     color: white;
     font-family: "rajdhani";
+    opacity: 0;
+}
+.header-left-wrapper p:nth-child(2){
+    animation: opacityTransform .6s forwards .3s ease;
+}
+.header-left-wrapper p + p{
+    animation: opacityTransform .6s forwards .6s ease;
 }
 form#form {
     height: 150px;
@@ -139,6 +209,10 @@ form#form {
     padding: 10px 20px 30px;
     color: white;
     justify-content: space-between;
+}
+#form input[type="email"],
+#form input[type="submit"]{
+    position: relative;
 }
 #form input[type="email"],
 #form input[type="submit"],
@@ -159,6 +233,8 @@ form#form {
     background: #AAAF3F;
     box-shadow: 0 10px 0 0 #757820;
     transform: translateY(0);
+    animation: opacityTransformInput .6s forwards 1s ease;
+    opacity: 0;
 }
 #form input[type="email"]:hover{
     opacity: .9;
@@ -176,6 +252,8 @@ form#form {
     padding: 10px 0;
     box-shadow: 0 10px 0 0 #757820;
     transform: translateY(0);
+    animation: opacityTransformInput .6s forwards 1.2s ease;
+    opacity: 0;
 }
 #form input[type="submit"]:hover{
     opacity: 1;
@@ -192,19 +270,20 @@ form#form {
 {
     content: "";
     top: 0;
-    left: 15px;
+    left: 17px;
     bottom: 0;
     right: 0;
     background: #AAAF3F;
     position: absolute;
     z-index: -1;
-    margin: 25px 0;    
 }
 .product.p-1::before{
-    transform: translate(-40px, -50px);
+    animation: animateP1 .6s forwards .6s cubic-bezier(0.39, 0.58, 0.57, 1);
+    margin: 25px 20px 15px 2px;
 }
 .product.p-2::before{
-    transform: translate(40px, 50px);
+    animation: animateP2 .6s forwards .6s cubic-bezier(0.39, 0.58, 0.57, 1);
+    margin: 25px 0 25px 15px;
 }
 .product.p-1, .product.p-2{
     z-index: 1;
@@ -266,15 +345,11 @@ form#form {
 }
 .exp-name{
     letter-spacing: 5px;
-}
-
-.exp-name, 
-.main-top h1
-{
     font-family: "rosewell", sans-serif;
     text-transform: uppercase;
     border-top: 1px solid;
     border-bottom: 1px solid;
+    font-size: 26px
 }
 main{
     margin-top: 50px;
@@ -580,12 +655,14 @@ main{
         width: 100vw;
         height: 100vh;
         background: rgb(0, 153, 255);
-        transform: translateY(100vh);
         justify-content: center;
-        transition: .6s all;
+        transition: .6s transform .5s;
+        transform: scaleY(0);
+        transform-origin: center bottom;
     }
     .nav-links.animate{
-        transform: translateY(0);
+        transform: scaleY(1);
+        transform-origin: center top;
     }
     .nav-links ul {
         justify-content: space-evenly;
@@ -660,7 +737,7 @@ main{
 @media (max-width:520px){
     .product.p-1::before, 
     .product.p-2::before{
-        transform: translate(0);
+        transform: translate(0) !important;
         margin: 0;
     }
     .product.p-1::before{
