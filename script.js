@@ -31,3 +31,7 @@ for (let i = 0; i < navLink.length; i++) {
         hamWarp.classList.remove("colored");
     });
 }
+
+const year = document.querySelector(".year");
+const getYear = new Date().getFullYear();
+year.innerHTML = getYear;

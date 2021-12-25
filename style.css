@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Kanit:ital,wght@1,100&family=Rajdhani:wght@500&family=Sanchez:ital@1&family=Work+Sans:wght@100&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Montserrat:wght@100;200;300;400;500&display=swap');
 @font-face{
     font-family: "rosewell", sans-serif;
     src: url("assets/Font/Rosewell/RosewellStandardRegular1.otf");
@@ -142,10 +143,12 @@ nav{
 .nav-links a, .logo p{
     color: white;
 }
-a.nav-link {
+a.nav-link,
+a.footer-links {
     position: relative;
 }
-a.nav-link::after {
+a.nav-link::after,
+a.footer-links::after {
     display: block;
     content: "";
     height: 5px;
@@ -157,9 +160,15 @@ a.nav-link::after {
     transition: transform .3s;
     transform-origin: bottom right;
     transform: scaleX(0);
-    
 }
-a.nav-link:hover::after{
+a.nav-link::after{
+    background-color: rgb(0 118 195);
+}
+a.footer-links::after{
+    background-color: rgb(16 16 40);
+}
+a.nav-link:hover::after,
+a.footer-links:hover:after{
     transform-origin: bottom left;
     transform: scaleX(1);
 }
@@ -484,12 +493,61 @@ main{
 .image-third{
     background-image: url(assets/image/13.jpg);
 }
-/* .image-second{
 
+/* Bagina Footer */
+footer{
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
 }
-.image-third{
-
-}    */
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(30, 30, 62);
+    padding: 50px;
+}
+.footer-left {
+    width: 100%;
+    height: 125px;
+}
+.footer-wrapper .footer-left .footer-logo{
+    width: 75%;
+    height: 75%;
+    font-family: "Sanchez", sans-serif;
+    display: flex;
+    align-items: center;
+}
+.footer-logo h1{
+    color: white;
+    margin-left: 25px;
+    font-size: 24px;
+    font-weight: 100;
+}
+.footer-logo img {
+    width: 100px;
+}
+.footer-link{
+    height: 100%;
+}
+.footer-link ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.footer-links, 
+.copyright p,
+.copyright span
+{
+    color: white;
+    font-weight: 200;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #13132B;
+    padding: 40px;
+}
 @media (max-width: 1160px){
     .product-exp{
         width: 100%;
@@ -732,6 +790,19 @@ main{
     }
     .image-first, .image-2.top-right.image-second{
         background-position-y: center;
+    }
+    .footer-wrapper{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .footer-logo{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-link ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 }
 @media (max-width:520px){
