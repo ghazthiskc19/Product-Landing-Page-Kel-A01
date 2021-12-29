@@ -560,8 +560,6 @@ footer{
     }
 }
 @media (max-width:1050px){
-
-
     header{
         grid-template-rows: auto 1fr;
         grid-template-columns: none;
@@ -611,12 +609,7 @@ footer{
     .exp-name-2 {
         padding: 27.5px 0;
     }
-
-
     /* Main */
-    .main-bottom{
-        width: 100vw;
-    }
     .text-1.center-center h1 {
         font-size: 50px;
     }
